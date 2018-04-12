@@ -79,7 +79,40 @@ public class GraphProcessor {
      * @return Integer the number of vertices (words) added
      */
     public Integer populateGraph(String filepath) {
-        return 0;
+            GraphADT<> graph = new Graph<>();
+            List<String> vertices = new ArrayList<>();
+            String input;
+            Scanner scnr;
+            int numOfVertices = 0;
+                try{
+                    scnr = new Scanner(System.in);
+                    File file = new File(filepath);
+                    scnr = new Scanner(file);
+                } catch (IOException e)
+                {
+                    System.out.println("Cannot open File");
+                    return -1;
+                }
+
+                while(scnr.hasNextLine())
+                {
+                    input = scnr.nextLine();
+                    graph.addVertex(input);
+                    vertices.add(input);
+                    numOfVertices++;
+                }
+
+            for(int i = 0; i < vertices.size();i++)
+            {
+                for(int j = 0; j < vertices.size(); j++)
+                {
+                    if(graph.isAdjacent(vertices.get(i), vertices.get(j)) ==true )
+                    {
+                        graph.addEdge(vertices.get(i), vertices.get(j));
+                    }
+                }
+            }
+		return numOfVertices;
         
     }
     
