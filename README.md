@@ -9,7 +9,7 @@ Dictionary using the Graph ADT
 * ~~Complete Graph Class~~ (Andrew)
   * ~~Implement all methods~~
 * Complete Graph Processor Class
-  * Complete PopulateGraph Method (Tom)
+  * C̶o̶m̶p̶l̶e̶t̶e̶ ̶P̶o̶p̶u̶l̶a̶t̶e̶G̶r̶a̶p̶h̶ ̶M̶e̶t̶h̶o̶d̶ ̶(̶T̶o̶m̶)̶
   * Complete Distance/Path Methods (Joyce)
 * Complete Word Processor Class
   * Complete getWordStream Method (Mike)
